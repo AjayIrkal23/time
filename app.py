@@ -52,4 +52,5 @@ def show_last_24_hours():
     return render_template_string(html_template, formatted_now=formatted_now, formatted_last_24=formatted_last_24)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
+
